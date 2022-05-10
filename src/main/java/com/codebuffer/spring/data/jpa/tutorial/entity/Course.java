@@ -51,9 +51,9 @@ public class Course {
             joinColumns = @JoinColumn(
                     name = "course_id",
                     referencedColumnName = "courseId"),
-    inverseJoinColumns = @JoinColumn(
-            name = "student_id",
-            referencedColumnName = "studentId"))
+            inverseJoinColumns = @JoinColumn(
+                    name = "student_id",
+                    referencedColumnName = "studentId"))
     private List<Student> students;
 
     public void addStudent(Student student) {
